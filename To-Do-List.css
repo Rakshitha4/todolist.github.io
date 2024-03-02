@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    border: 5px red ridge;
+    width:500px;
+}
+.todo{
+    display: flex;
+    justify-content:space-between ;
+    padding: 1em;
+}
+.todo_value{
+    background-color: thistle;
+    border: none;
+    outline: none;
+    font-size: medium;
+    font-family: cursive;
+    font-weight: bold;
+    font-style: oblique;
+    flex-grow: 1;
+}
+.todo:has(.todo_done:checked){
+    text-decoration: line-through;
+    color: teal;
+    order: 1;
+}
